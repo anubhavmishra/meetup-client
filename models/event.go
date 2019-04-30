@@ -9,6 +9,8 @@ type Event struct {
 	Waitlist int    `json:"waitlist_count"`
 	Group    Group  `json:"group"`
 	Venue    Venue  `json:"venue"`
+	Time     int    `json:"time,omitempty"`
+	Duration int    `json:"duration,omitempty"`
 }
 
 // Events wraps a slice of Event for unmarshalling the results array.

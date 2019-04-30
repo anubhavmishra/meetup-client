@@ -3,8 +3,6 @@ package meetup
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
-	"io/ioutil"
 	"net/http"
 	"net/url"
 	"time"
@@ -103,11 +101,6 @@ func (c *Client) call(method, uri string, data *bytes.Buffer, result interface{}
 		return err
 	}
 	defer res.Body.Close()
-
-	// TODO: remove this code
-	bodyBytes, _ := ioutil.ReadAll(res.Body)
-	bodyString := string(bodyBytes)
-	fmt.Println("response:", bodyString)
 
 	return json.NewDecoder(res.Body).Decode(result)
 }
