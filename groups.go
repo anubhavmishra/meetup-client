@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Guitarbum722/meetup-client/models"
+	"github.com/anubhavmishra/meetup-client/models"
 )
 
 const (

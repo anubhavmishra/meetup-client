@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Guitarbum722/meetup-client/mocks"
-	"github.com/Guitarbum722/meetup-client/models"
+	"github.com/anubhavmishra/meetup-client/mocks"
+	"github.com/anubhavmishra/meetup-client/models"
 	"github.com/stretchr/testify/mock"
 )
 
